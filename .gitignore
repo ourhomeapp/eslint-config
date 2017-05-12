@@ -1,0 +1,10 @@
+.DS_Store
+*.orig
+**/.idea/
+**/.vscode/
+**/*.sublime-*
+
+**/node_modules/*
+**/bower_components/*
+*.log
+*.log.*
