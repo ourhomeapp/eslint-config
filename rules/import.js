@@ -1,3 +1,5 @@
+const { ERROR, OFF } = require('./constants')
+
 module.exports = {
   plugins: ['import'],
 
@@ -6,19 +8,23 @@ module.exports = {
       'node_modules',
       /\.(scss|less|css|coffee|svg|gif|png|jpg)$/,
     ],
+    'import/core-modules': ['react-native'],
   },
 
   rules: {
-    'import/first': 'off',
-    'import/no-unresolved': ['error', { commonjs: false, amd: true }],
-    'import/named': 'error',
-    'import/namespace': 'error',
-    'import/default': 'error',
-    'import/export': 'error',
-    'import/prefer-default-export': 'off',
-    'import/no-extraneous-dependencies': ['error', {
-      devDependencies: true,
-      optionalDependencies: true,
-    }],
+    'import/first': OFF,
+    'import/no-unresolved': [ERROR, { commonjs: false, amd: true }],
+    'import/named': ERROR,
+    'import/namespace': ERROR,
+    'import/default': ERROR,
+    'import/export': ERROR,
+    'import/prefer-default-export': OFF,
+    'import/no-extraneous-dependencies': [
+      ERROR,
+      {
+        devDependencies: true,
+        optionalDependencies: true,
+      },
+    ],
   },
 }

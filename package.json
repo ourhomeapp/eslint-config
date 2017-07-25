@@ -2,24 +2,34 @@
   "name": "eslint-config-ourhome",
   "version": "1.0.0",
   "description": "EsLint config for OurHome javascript projects. Based on AirBnB.",
-  "main": "index.js",
   "author": "OurHome team",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "url": "git@bitbucket.org:ourhomedev/eslint-config-ourhome.git",
+    "type": "git"
+  },
+  "main": "index.js",
   "devDependencies": {
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
-    "eslint-plugin-babel": "^4.1.1"
-   },
+    "prettier": "^1.5.3"
+  },
   "peerDependencies": {
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
-    "eslint-plugin-babel": "^4.1.1"
+    "prettier": "^1.5.3"
   }
 }
