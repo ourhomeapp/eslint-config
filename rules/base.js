@@ -9,13 +9,14 @@ module.exports = {
     'no-underscore-dangle': [WARN],
     'max-nested-callbacks': [WARN, 5],
     'no-restricted-globals': [
-      'self',
-      'find',
-      'error',
-      'event',
-      // Use Number.isNaN / Number.isFinite
-      'isNaN',
-      'isFinite',
+      ERROR,
+      ...[
+        'self',
+        'find',
+        'event',
+        'isNaN',
+        'isFinite',
+      ],
     ],
   },
 }
