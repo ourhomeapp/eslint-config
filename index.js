@@ -7,4 +7,12 @@ module.exports = {
       './rules/prettier',
     ].map(require.resolve),
   ],
+
+  env: {
+    es6: true,
+  },
+
+  parserOptions: {
+    ecmaVersion: 8,
+  },
 }
