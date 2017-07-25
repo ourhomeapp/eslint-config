@@ -4,6 +4,7 @@ module.exports = {
     ...[
       './rules/base',
       './rules/import',
+      './rules/react',
       './rules/prettier',
     ].map(require.resolve),
   ],
