@@ -10,7 +10,11 @@
     "type": "git"
   },
   "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.test.js"
+  },
   "devDependencies": {
+    "common-tags": "^1.4.0",
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.3.0",
@@ -18,7 +22,8 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
-    "prettier": "^1.5.3"
+    "prettier": "^1.5.3",
+    "tape": "^4.7.0"
   },
   "peerDependencies": {
     "eslint": "^4.3.0",
