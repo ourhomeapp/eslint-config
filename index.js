@@ -5,9 +5,10 @@ module.exports = {
     'airbnb',
     ...[
       './rules/base',
-      './rules/import',
       './rules/babel',
-      './rules/lodash-fp',
+      './rules/import',
+      './rules/prettier',
     ].map(require.resolve),
+    'prettier',
   ],
 }
