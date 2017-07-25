@@ -8,6 +8,14 @@ module.exports = {
     'no-use-before-define': [ERROR, 'nofunc'],
     'no-underscore-dangle': [WARN],
     'max-nested-callbacks': [WARN, 5],
-    'no-restricted-globals': ['error', 'find', 'self', 'event'],
+    'no-restricted-globals': [
+      'self',
+      'find',
+      'error',
+      'event',
+      // Use Number.isNaN / Number.isFinite
+      'isNaN',
+      'isFinite',
+    ],
   },
 }
