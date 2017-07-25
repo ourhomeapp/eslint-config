@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ourhome",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "EsLint config for OurHome javascript projects. Based on AirBnB.",
   "author": "OurHome team",
   "license": "MIT",
