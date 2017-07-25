@@ -10,13 +10,7 @@ module.exports = {
     'max-nested-callbacks': [WARN, 5],
     'no-restricted-globals': [
       ERROR,
-      ...[
-        'self',
-        'find',
-        'event',
-        'isNaN',
-        'isFinite',
-      ],
+      ...['self', 'find', 'event', 'isNaN', 'isFinite'],
     ],
   },
 }
