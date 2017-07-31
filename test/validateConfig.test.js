@@ -1,4 +1,4 @@
-const test = require('tape')
+const test = require('ava')
 const { stripIndent } = require('common-tags')
 const { CLIEngine } = require('eslint')
 
@@ -15,7 +15,6 @@ test('Validate config', t => {
     ].join(''),
   )
 
-  t.equal(output.errorCount, 0)
-  t.equal(output.warningCount, 0)
-  t.end()
+  t.is(output.errorCount, 0)
+  t.is(output.warningCount, 0)
 })
