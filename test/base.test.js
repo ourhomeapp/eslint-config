@@ -79,15 +79,13 @@ test('Error on restricted globals', t => {
     ].join(''),
   )
 
-  t.is(output.errorCount, 8)
   t.is(output.warningCount, 0)
 
   const messages = output.results[0].messages
-  const noUndef = messages.filter(({ ruleId }) => ruleId === 'no-undef')
   const noRestrictedGlobals = messages.filter(
-    ({ ruleId }) => ruleId === 'no-restricted-globals',
+    ({ ruleId, severity }) =>
+      ruleId === 'no-restricted-globals' && severity === 2,
   )
 
-  t.is(noUndef.length, 3)
   t.is(noRestrictedGlobals.length, 5)
 })
