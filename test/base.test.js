@@ -7,7 +7,7 @@ test('Warn on complexity', t => {
   const output = cli.executeOnText(
     [
       stripIndent`
-        const complexFn = n => {
+        export const complexFn = n => {
           if (n > 0) return '0'
           if (n > 1) return '1'
           if (n > 2) return '2'
@@ -20,8 +20,6 @@ test('Warn on complexity', t => {
           if (n > 9) return '9'
           return n
         }
-
-        complexFn(10)
       `,
       '\n',
     ].join(''),
@@ -71,17 +69,11 @@ test('Error on restricted globals', t => {
   const output = cli.executeOnText(
     [
       stripIndent`
-        const fn1 = () => self.doSomething()
-        const fn2 = () => find('someid')
-        const fn3 = () => event.something
-        const fn4 = () => isNaN(NaN)
-        const fn5 = () => isFinite(Infinity)
-
-        fn1()
-        fn2()
-        fn3()
-        fn4()
-        fn5()
+        export const fn1 = () => self.doSomething()
+        export const fn2 = () => find('someid')
+        export const fn3 = () => event.something
+        export const fn4 = () => isNaN(NaN)
+        export const fn5 = () => isFinite(Infinity)
       `,
       '\n',
     ].join(''),
