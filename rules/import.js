@@ -5,7 +5,7 @@ module.exports = {
 
   rules: {
     'import/first': OFF,
-    'import/no-unresolved': [ERROR, { commonjs: false, amd: true }],
+    'import/no-unresolved': [ERROR, { commonjs: true, amd: true }],
     'import/named': ERROR,
     'import/namespace': ERROR,
     'import/default': ERROR,
