@@ -5,6 +5,7 @@ module.exports = {
       './rules/base',
       './rules/import',
       './rules/react',
+      './rules/react-native',
       './rules/prettier',
     ].map(require.resolve),
   ],

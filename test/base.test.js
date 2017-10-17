@@ -81,7 +81,7 @@ test('Error on restricted globals', t => {
 
   t.is(output.warningCount, 0)
 
-  const messages = output.results[0].messages
+  const { messages } = output.results[0]
   const noRestrictedGlobals = messages.filter(
     ({ ruleId, severity }) =>
       ruleId === 'no-restricted-globals' && severity === 2,
