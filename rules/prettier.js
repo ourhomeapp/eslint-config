@@ -1,4 +1,4 @@
-const { WARN } = require('./constants')
+const { WARN } = require('./constants');
 
 module.exports = {
   plugins: ['prettier'],
@@ -8,4 +8,4 @@ module.exports = {
   rules: {
     'prettier/prettier': WARN,
   },
-}
+};

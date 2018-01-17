@@ -1,4 +1,4 @@
-const { ERROR } = require('./constants')
+const { ERROR } = require('./constants');
 
 module.exports = {
   plugins: ['react-native'],
@@ -9,4 +9,4 @@ module.exports = {
     'react-native/no-inline-styles': ERROR,
     'react-native/no-color-literals': ERROR,
   },
-}
+};

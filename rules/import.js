@@ -1,4 +1,4 @@
-const { ERROR, OFF } = require('./constants')
+const { ERROR, OFF } = require('./constants');
 
 module.exports = {
   plugins: ['import'],
@@ -12,4 +12,4 @@ module.exports = {
     'import/export': ERROR,
     'import/prefer-default-export': OFF,
   },
-}
+};

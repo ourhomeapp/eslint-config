@@ -5,4 +5,4 @@ module.exports = {
     node: true,
     browser: false,
   },
-}
+};

@@ -1,4 +1,4 @@
-const { ERROR, WARN } = require('./constants')
+const { ERROR, WARN } = require('./constants');
 
 module.exports = {
   rules: {
@@ -9,4 +9,4 @@ module.exports = {
       ...['self', 'find', 'event', 'isNaN', 'isFinite'],
     ],
   },
-}
+};
