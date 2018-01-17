@@ -19,7 +19,7 @@ test('Warn on complexity', t => {
           if (n > 8) return '8';
           if (n > 9) return '9';
           return n;
-        }
+        };
       `,
       '\n',
     ].join(''),
@@ -49,7 +49,7 @@ test('Warn on too many nested callbacks', t => {
               ),
             ),
           ),
-        )
+        );
       `,
       '\n',
     ].join(''),
