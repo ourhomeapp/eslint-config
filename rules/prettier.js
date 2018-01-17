@@ -6,14 +6,6 @@ module.exports = {
   extends: ['prettier', 'prettier/react'],
 
   rules: {
-    'prettier/prettier': [
-      WARN,
-      {
-        semi: false,
-        singleQuote: true,
-        trailingComma: 'all',
-        bracketSpacing: true,
-      },
-    ],
+    'prettier/prettier': WARN,
   },
 }
