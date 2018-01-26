@@ -1267,16 +1267,6 @@ eslint-plugin-prettier@^2.5.0:
     fast-diff "^1.1.1"
     jest-docblock "^21.0.0"
 
-eslint-plugin-react-native-globals@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native-globals/-/eslint-plugin-react-native-globals-0.1.1.tgz#68f11fa5c64bcab2258d804e20262904c9987306"
-
-eslint-plugin-react-native@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native/-/eslint-plugin-react-native-3.2.1.tgz#04fcadd3285b7cd2f27146e640c941b00acc4e7e"
-  dependencies:
-    eslint-plugin-react-native-globals "^0.1.1"
-
 eslint-plugin-react@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.6.0.tgz#351651188c74c5b2fecc2717e3936b7207baa728"

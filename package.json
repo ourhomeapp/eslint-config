@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ourhome",
-  "version": "5.1.0",
+  "version": "6.0.0",
   "description": "EsLint config for OurHome javascript projects. Based on AirBnB.",
   "author": "OurHome team",
   "license": "MIT",
@@ -34,7 +34,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.6.0",
-    "eslint-plugin-react-native": "^3.2.1",
     "prettier": "^1.10.2"
   },
   "peerDependencies": {
@@ -45,7 +44,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.6.0",
-    "eslint-plugin-react-native": "^3.2.1",
     "prettier": "^1.10.2"
   }
 }
