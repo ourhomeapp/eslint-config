@@ -1,29 +1,9 @@
 const test = require('ava');
-const { stripIndent } = require('common-tags');
-const { CLIEngine } = require('eslint');
+
+const { executeOnFiles } = require('./util');
 
 test('Warn on complexity', t => {
-  const cli = new CLIEngine({ useEslintrc: false, configFile: 'index.js' });
-  const output = cli.executeOnText(
-    [
-      stripIndent`
-        export const complexFn = n => {
-          if (n > 0) return '0';
-          if (n > 1) return '1';
-          if (n > 2) return '2';
-          if (n > 3) return '3';
-          if (n > 4) return '4';
-          if (n > 5) return '5';
-          if (n > 6) return '6';
-          if (n > 7) return '7';
-          if (n > 8) return '8';
-          if (n > 9) return '9';
-          return n;
-        };
-      `,
-      '\n',
-    ].join(''),
-  );
+  const output = executeOnFiles(['./test/fixtures/baseComplexity.js']);
 
   t.is(output.errorCount, 0);
   t.is(output.warningCount, 1);
@@ -35,25 +15,7 @@ test('Warn on complexity', t => {
 });
 
 test('Warn on too many nested callbacks', t => {
-  const cli = new CLIEngine({ useEslintrc: false, configFile: 'index.js' });
-  const output = cli.executeOnText(
-    [
-      stripIndent`
-        const takesCallback = cb => cb();
-
-        takesCallback(() =>
-          takesCallback(() =>
-            takesCallback(() =>
-              takesCallback(() =>
-                takesCallback(() => takesCallback(() => takesCallback())),
-              ),
-            ),
-          ),
-        );
-      `,
-      '\n',
-    ].join(''),
-  );
+  const output = executeOnFiles(['./test/fixtures/baseNestedCallbacks.js']);
 
   t.is(output.errorCount, 0);
   t.is(output.warningCount, 1);
@@ -65,19 +27,7 @@ test('Warn on too many nested callbacks', t => {
 });
 
 test('Error on restricted globals', t => {
-  const cli = new CLIEngine({ useEslintrc: false, configFile: 'index.js' });
-  const output = cli.executeOnText(
-    [
-      stripIndent`
-        export const fn1 = () => self.doSomething();
-        export const fn2 = () => find('someid');
-        export const fn3 = () => event.something;
-        export const fn4 = () => isNaN(NaN);
-        export const fn5 = () => isFinite(Infinity);
-      `,
-      '\n',
-    ].join(''),
-  );
+  const output = executeOnFiles(['./test/fixtures/baseRestrictedGlobals.js']);
 
   t.is(output.warningCount, 0);
 
