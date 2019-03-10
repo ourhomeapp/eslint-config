@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    'react/jsx-filename-extension': 'off',
+    'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
   },
 };
