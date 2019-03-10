@@ -1,18 +1,16 @@
-const { ERROR, WARN, OFF } = require('./constants');
-
 module.exports = {
   plugins: ['import'],
 
   rules: {
-    'import/first': OFF,
-    'import/no-unresolved': [ERROR, { commonjs: true, amd: true }],
-    'import/named': ERROR,
-    'import/namespace': ERROR,
-    'import/default': ERROR,
-    'import/export': ERROR,
-    'import/prefer-default-export': OFF,
+    'import/first': 'off',
+    'import/no-unresolved': ['error', { commonjs: true, amd: true }],
+    'import/named': 'error',
+    'import/namespace': 'error',
+    'import/default': 'error',
+    'import/export': 'error',
+    'import/prefer-default-export': 'off',
     'import/order': [
-      WARN,
+      'warn',
       {
         'newlines-between': 'always',
         groups: [
