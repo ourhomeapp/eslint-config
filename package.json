@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ourhome",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "description": "EsLint config for OurHome javascript projects. Based on AirBnB.",
   "author": "OurHome team",
   "license": "MIT",
@@ -25,25 +25,27 @@
     "test": "ava"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
-    "common-tags": "^1.8.0",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.2",
-    "prettier": "^1.18.2"
+    "ava": "2.4.0",
+    "common-tags": "1.8.0",
+    "eslint": "6.4.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.3.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "2.0.1",
+    "prettier": "1.18.2"
   },
   "peerDependencies": {
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.2",
-    "prettier": "^1.18.2"
+    "eslint": "6.4.x",
+    "eslint-config-airbnb": "18.0.x",
+    "eslint-config-prettier": "6.3.x",
+    "eslint-plugin-import": "2.18.x",
+    "eslint-plugin-jsx-a11y": "6.2.x",
+    "eslint-plugin-prettier": "3.1.x",
+    "eslint-plugin-react": "7.14.x",
+    "eslint-plugin-react-hooks": "2.0.x",
+    "prettier": "1.18.x"
   }
 }
