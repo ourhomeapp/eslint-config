@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ourhome",
-  "version": "13.0.0",
+  "version": "14.0.0",
   "description": "EsLint config for OurHome javascript projects. Based on AirBnB.",
   "author": "OurHome team",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "test": "ava"
   },
   "devDependencies": {
-    "ava": "3.1.0",
+    "ava": "3.5.0",
     "common-tags": "1.8.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.0.1",
@@ -40,8 +40,8 @@
     "eslint-plugin-import": "2.20.x",
     "eslint-plugin-jsx-a11y": "6.2.x",
     "eslint-plugin-prettier": "3.1.x",
-    "eslint-plugin-react": "7.18.x",
-    "eslint-plugin-react-hooks": "2.3.x",
+    "eslint-plugin-react": "7.19.x",
+    "eslint-plugin-react-hooks": "2.5.x",
     "prettier": "1.19.x"
   }
 }

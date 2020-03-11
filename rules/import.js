@@ -6,6 +6,7 @@ module.exports = {
     'import/no-unresolved': ['error', { commonjs: true, amd: true }],
     'import/named': 'error',
     'import/namespace': 'error',
+    'import/no-cycle': 'warn',
     'import/default': 'error',
     'import/export': 'error',
     'import/prefer-default-export': 'off',
@@ -13,7 +14,7 @@ module.exports = {
       'warn',
       {
         'newlines-between': 'always',
-        groups: [
+        'groups': [
           'builtin',
           'external',
           'internal',
