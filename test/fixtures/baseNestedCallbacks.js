@@ -1,4 +1,4 @@
-const takesCallback = cb => cb();
+const takesCallback = (cb) => cb();
 
 takesCallback(() =>
   takesCallback(() =>
