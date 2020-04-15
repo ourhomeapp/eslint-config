@@ -1,12 +1,12 @@
 {
-  "name": "eslint-config-ourhome",
-  "version": "15.0.0",
-  "description": "EsLint config for OurHome javascript projects. Based on AirBnB.",
+  "name": "@ourhomeapp/eslint-config-ourhome",
+  "version": "16.0.0",
+  "description": "ESLint config for OurHome javascript projects. Based on AirBnB.",
   "author": "OurHome team",
   "license": "MIT",
   "private": false,
   "repository": {
-    "url": "git@bitbucket.org:ourhomedev/eslint-config-ourhome.git",
+    "url": "git@github.com:ourhomeapp/eslint-config-ourhome.git",
     "type": "git"
   },
   "main": "index.js",
@@ -21,17 +21,17 @@
     "test": "ava"
   },
   "devDependencies": {
-    "ava": "3.5.1",
+    "ava": "3.7.0",
     "common-tags": "1.8.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.1.0",
     "eslint-config-prettier": "6.10.1",
-    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-import": "2.20.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-prettier": "3.1.3",
     "eslint-plugin-react": "7.19.0",
-    "eslint-plugin-react-hooks": "2.5.1",
-    "prettier": "2.0.2"
+    "eslint-plugin-react-hooks": "3.0.0",
+    "prettier": "2.0.4"
   },
   "peerDependencies": {
     "eslint": "6.8.x",
@@ -41,7 +41,7 @@
     "eslint-plugin-jsx-a11y": "6.2.x",
     "eslint-plugin-prettier": "3.1.x",
     "eslint-plugin-react": "7.19.x",
-    "eslint-plugin-react-hooks": "2.5.x",
+    "eslint-plugin-react-hooks": "3.0.x",
     "prettier": "2.0.x"
   }
 }
