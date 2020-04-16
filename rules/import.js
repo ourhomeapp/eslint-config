@@ -1,4 +1,7 @@
 module.exports = {
+  settings: {
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.mjs'],
+  },
   plugins: ['import'],
   extends: [
     'plugin:import/recommended',
