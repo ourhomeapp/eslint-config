@@ -1,3 +1,6 @@
-# @ourhomeapp/eslint-config-ourhome
+# @ourhomeapp/eslint-config
 
-ESLint config for web + react-dom based projects, based on Airbnb, with TypeScript support.
+ESLint config for web + react-dom based projects
+
+- based on Airbnb
+- TypeScript support

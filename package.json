@@ -1,12 +1,12 @@
 {
-  "name": "@ourhomeapp/eslint-config-ourhome",
+  "name": "@ourhomeapp/eslint-config",
   "version": "16.0.0",
-  "description": "ESLint config for OurHome React projects",
+  "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
   "private": false,
   "repository": {
-    "url": "git@github.com:ourhomeapp/eslint-config-ourhome.git",
+    "url": "git@github.com:ourhomeapp/eslint-config.git",
     "type": "git"
   },
   "main": "index.js",
