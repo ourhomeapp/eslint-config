@@ -2,7 +2,7 @@ const test = require('ava');
 
 const { executeOnFiles } = require('./util');
 
-test('Warn on complexity', t => {
+test('Warn on complexity', (t) => {
   const output = executeOnFiles(['./test/fixtures/baseComplexity.js']);
 
   t.is(output.errorCount, 0);
@@ -14,7 +14,7 @@ test('Warn on complexity', t => {
   t.is(message.severity, 1);
 });
 
-test('Warn on too many nested callbacks', t => {
+test('Warn on too many nested callbacks', (t) => {
   const output = executeOnFiles(['./test/fixtures/baseNestedCallbacks.js']);
 
   t.is(output.errorCount, 0);
@@ -26,7 +26,7 @@ test('Warn on too many nested callbacks', t => {
   t.is(message.severity, 1);
 });
 
-test('Error on restricted globals', t => {
+test('Error on restricted globals', (t) => {
   const output = executeOnFiles(['./test/fixtures/baseRestrictedGlobals.js']);
 
   t.is(output.warningCount, 0);

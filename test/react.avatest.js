@@ -2,7 +2,7 @@ const test = require('ava');
 
 const { executeOnFiles } = require('./util');
 
-test('Error if jsx in unsupported file type', t => {
+test('Error if jsx in unsupported file type', (t) => {
   const output = executeOnFiles([
     './test/fixtures/reactJsxFilenameExtension.js',
   ]);

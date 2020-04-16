@@ -1,19 +1,11 @@
 module.exports = {
   extends: [
-    'airbnb',
-    ...[
-      './rules/base',
-      './rules/import',
-      './rules/react',
-      './rules/prettier',
-    ].map(require.resolve),
-  ],
-
-  env: {
-    es6: true,
-  },
-
-  parserOptions: {
-    ecmaVersion: 2018,
-  },
+    './rules/base',
+    './rules/typescript',
+    './rules/import',
+    './rules/jest',
+    './rules/react',
+    './rules/jsx-a11y',
+    './rules/prettier',
+  ].map(require.resolve),
 };

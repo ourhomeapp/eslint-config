@@ -1,7 +1,7 @@
 {
   "name": "@ourhomeapp/eslint-config-ourhome",
   "version": "16.0.0",
-  "description": "ESLint config for OurHome javascript projects. Based on AirBnB.",
+  "description": "ESLint config for OurHome React projects",
   "author": "OurHome team",
   "license": "MIT",
   "private": false,
@@ -12,7 +12,7 @@
   "main": "index.js",
   "ava": {
     "files": [
-      "test/*.test.js"
+      "test/*.avatest.js"
     ],
     "concurrency": 5,
     "failFast": true
@@ -20,28 +20,31 @@
   "scripts": {
     "test": "ava"
   },
-  "devDependencies": {
-    "ava": "3.7.0",
-    "common-tags": "1.8.0",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "2.28.0",
+    "@typescript-eslint/parser": "2.28.0",
+    "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.1.0",
+    "eslint-config-airbnb-base": "14.1.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jest": "23.8.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-prettier": "3.1.3",
     "eslint-plugin-react": "7.19.0",
-    "eslint-plugin-react-hooks": "3.0.0",
-    "prettier": "2.0.4"
+    "eslint-plugin-react-hooks": "3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "ava": "3.7.0",
+    "common-tags": "1.8.0",
+    "prettier": "2.0.4",
+    "typescript": "3.8.3"
   },
   "peerDependencies": {
-    "eslint": "6.8.x",
-    "eslint-config-airbnb": "18.1.x",
-    "eslint-config-prettier": "6.10.x",
-    "eslint-plugin-import": "2.20.x",
-    "eslint-plugin-jsx-a11y": "6.2.x",
-    "eslint-plugin-prettier": "3.1.x",
-    "eslint-plugin-react": "7.19.x",
-    "eslint-plugin-react-hooks": "3.0.x",
-    "prettier": "2.0.x"
+    "@babel/core": ">=7.9.0",
+    "prettier": ">=2.0.0",
+    "typescript": ">=3.8.0"
   }
 }
