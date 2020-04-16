@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "17.0.0-pubtest.2",
+  "version": "17.0.0",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
@@ -43,9 +43,9 @@
     "typescript": "3.8.3"
   },
   "peerDependencies": {
-    "@babel/core": ">=7.9.0",
-    "eslint": ">=6.8.0",
-    "prettier": ">=2.0.0",
-    "typescript": ">=3.8.0"
+    "@babel/core": ">=7.9.x",
+    "eslint": ">=6.8.x",
+    "prettier": ">=2.0.x",
+    "typescript": ">=3.8.x"
   }
 }
