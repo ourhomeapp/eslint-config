@@ -1,13 +1,11 @@
 module.exports = {
-  settings: {
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.mjs'],
-  },
   plugins: ['import'],
   extends: [
     'plugin:import/recommended',
     ...['eslint-config-airbnb-base/rules/imports'].map(require.resolve),
   ],
   rules: {
+    'import/extensions': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'import/order': [
       'warn',
