@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "17.0.0-pubtest.1",
+  "version": "17.0.0-pubtest.2",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
