@@ -14,7 +14,6 @@ module.exports = {
   rules: {
     'camelcase': ['error', { properties: 'never' }],
     'complexity': ['warn', 10],
-    'curly': ['error', 'multi-line', 'consistent'],
     'max-nested-callbacks': ['warn', { max: 5 }],
     'no-console': 'off',
     'no-unused-vars': [

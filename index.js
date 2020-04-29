@@ -7,5 +7,6 @@ module.exports = {
     './rules/react',
     './rules/jsx-a11y',
     './rules/prettier',
+    './rules/style',
   ].map(require.resolve),
 };

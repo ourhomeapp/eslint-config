@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "17.1.0",
+  "version": "17.2.0",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
@@ -21,8 +21,8 @@
     "test": "ava"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "2.29.0",
-    "@typescript-eslint/parser": "2.29.0",
+    "@typescript-eslint/eslint-plugin": "2.30.0",
+    "@typescript-eslint/parser": "2.30.0",
     "babel-eslint": "10.1.0",
     "eslint-config-airbnb": "18.1.0",
     "eslint-config-airbnb-base": "14.1.0",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
-    "ava": "3.7.1",
+    "ava": "3.8.1",
     "common-tags": "1.8.0",
     "eslint": "6.8.0",
     "prettier": "2.0.4",
