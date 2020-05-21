@@ -8,10 +8,7 @@ module.exports = {
       files: ['*.{ts,tsx}'],
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint/eslint-plugin'],
-      extends: [
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-      ],
+      extends: ['plugin:@typescript-eslint/recommended'],
       rules: {
         '@typescript-eslint/camelcase': ['error', { properties: 'never' }],
         '@typescript-eslint/explicit-function-return-type': 'off',
