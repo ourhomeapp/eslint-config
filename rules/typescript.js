@@ -1,3 +1,7 @@
+const baseRules = require('./base');
+
+const baseNoUseBeforeDefineOptions = baseRules.rules['no-use-before-define'][1];
+
 module.exports = {
   overrides: [
     {
@@ -10,10 +14,15 @@ module.exports = {
       plugins: ['@typescript-eslint/eslint-plugin'],
       extends: ['plugin:@typescript-eslint/recommended'],
       rules: {
+        'no-use-before-define': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-unused-vars': [
           'error',
           { argsIgnorePattern: '^_', varsIgnorePattern: '[iI]gnored' },
+        ],
+        '@typescript-eslint/no-use-before-define': [
+          'error',
+          { ...baseNoUseBeforeDefineOptions, ignoreTypeReferences: true },
         ],
       },
     },

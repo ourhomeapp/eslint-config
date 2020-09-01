@@ -20,6 +20,10 @@ module.exports = {
       'error',
       { argsIgnorePattern: '^_', varsIgnorePattern: '[iI]gnored' },
     ],
+    'no-use-before-define': [
+      'error',
+      { functions: false, classes: true, variables: true },
+    ],
   },
   overrides: [
     {
