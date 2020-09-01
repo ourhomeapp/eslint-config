@@ -1,6 +1,9 @@
 const foo = 1;
 const bar = 2;
 
-([1, 2, 3] as NumArray).map((n) => n * foo + bar);
+(['bar', 'baz'] as Foo[]).map((val) => `${val}${foo + bar}`);
 
-type NumArray = number[];
+enum Foo {
+  Bar = 'bar',
+  Baz = 'baz',
+}

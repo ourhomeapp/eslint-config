@@ -14,8 +14,10 @@ module.exports = {
       plugins: ['@typescript-eslint/eslint-plugin'],
       extends: ['plugin:@typescript-eslint/recommended'],
       rules: {
+        'no-shadow': 'off',
         'no-use-before-define': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-shadow': ['error'],
         '@typescript-eslint/no-unused-vars': [
           'error',
           { argsIgnorePattern: '^_', varsIgnorePattern: '[iI]gnored' },
