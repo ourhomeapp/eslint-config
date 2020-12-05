@@ -7,11 +7,17 @@ test('Error if jsx in unsupported file type', (t) => {
     './test/fixtures/reactJsxFilenameExtension.js',
   ]);
 
-  t.is(output.errorCount, 1);
+  t.is(output.errorCount, 2);
   t.is(output.warningCount, 0);
 
-  const message = output.results[0].messages[0];
+  const messages = [...output.results[0].messages].sort((a, b) => {
+    if (a.ruleId === b.ruleId) return 0;
 
-  t.is(message.ruleId, 'react/jsx-filename-extension');
-  t.is(message.severity, 2);
+    return a.ruleId > b.ruleId ? 1 : -1;
+  });
+
+  t.is(messages.length, 2);
+  t.true(messages.every(({ severity }) => severity === 2));
+  t.is(messages[0].ruleId, 'react/display-name');
+  t.is(messages[1].ruleId, 'react/jsx-filename-extension');
 });
