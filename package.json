@@ -12,7 +12,7 @@
   "main": "index.js",
   "ava": {
     "files": [
-      "test/*.avatest.js"
+      "test/*.test.*"
     ],
     "concurrency": 5,
     "failFast": true
