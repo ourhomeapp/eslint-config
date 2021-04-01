@@ -18,7 +18,7 @@ module.exports = {
     'no-console': 'off',
     'no-unused-vars': [
       'error',
-      { argsIgnorePattern: '^_', varsIgnorePattern: '[iI]gnored' },
+      { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
     ],
     'no-use-before-define': [
       'error',

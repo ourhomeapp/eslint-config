@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: ['import'],
   extends: [
     'plugin:import/recommended',
     ...['eslint-config-airbnb-base/rules/imports'].map(require.resolve),

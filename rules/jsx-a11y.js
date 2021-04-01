@@ -4,7 +4,6 @@ module.exports = {
   overrides: [
     {
       files: ['*.{tsx,jsx}'],
-      plugins: ['jsx-a11y'],
       extends: ['plugin:jsx-a11y/recommended'],
       rules: airbnbRules,
     },
