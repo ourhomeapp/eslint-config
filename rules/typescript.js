@@ -41,12 +41,5 @@ module.exports = {
         '@typescript-eslint/no-non-null-assertion': 'off',
       },
     },
-    /* Temporary workaround for https://github.com/typescript-eslint/typescript-eslint/issues/2844. TODO: Remove this on @typescript-eslint/eslint-plugin update */
-    {
-      files: ['*.d.ts'],
-      rules: {
-        '@typescript-eslint/no-unused-vars': 'off',
-      },
-    },
   ],
 };
