@@ -17,6 +17,7 @@ module.exports = {
         'no-shadow': 'off',
         'no-unused-vars': 'off',
         'no-use-before-define': 'off',
+        '@typescript-eslint/consistent-type-imports': 'error',
         '@typescript-eslint/no-shadow': [
           'error',
           {
