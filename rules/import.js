@@ -15,6 +15,7 @@ module.exports = {
           'external',
           'internal',
           ['parent', 'sibling', 'index'],
+          'type',
         ],
       },
     ],
