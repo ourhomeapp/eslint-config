@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "26.9.1",
+  "version": "26.9.2",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "test": "ava"
   },
   "dependencies": {
-    "@babel/eslint-parser": "7.14.4",
+    "@babel/eslint-parser": "7.14.5",
     "@typescript-eslint/eslint-plugin": "4.26.1",
     "@typescript-eslint/parser": "4.26.1",
     "eslint-config-airbnb": "18.2.1",
@@ -35,9 +35,9 @@
     "eslint-plugin-react-hooks": "4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.14.3",
-    "@babel/preset-env": "7.14.4",
-    "@babel/preset-react": "7.13.13",
+    "@babel/core": "7.14.5",
+    "@babel/preset-env": "7.14.5",
+    "@babel/preset-react": "7.14.5",
     "ava": "3.15.0",
     "common-tags": "1.8.0",
     "eslint": "7.28.0",
@@ -48,7 +48,7 @@
   "peerDependencies": {
     "@babel/core": ">=7.14.x",
     "@babel/preset-env": ">=7.14.x",
-    "@babel/preset-react": ">=7.13.x",
+    "@babel/preset-react": ">=7.14.x",
     "eslint": ">=7.28.x",
     "prettier": ">=2.3.x",
     "typescript": ">=4.3.x"
