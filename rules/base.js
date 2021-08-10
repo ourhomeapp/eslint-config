@@ -24,6 +24,7 @@ module.exports = {
       'error',
       { functions: false, classes: false, variables: false },
     ],
+    'no-void': ['error', { allowAsStatement: true }],
   },
   overrides: [
     {
