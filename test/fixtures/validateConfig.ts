@@ -14,7 +14,6 @@ const _ = 5;
 
 const ident: {
   <T>(_: T): T;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-} = (t: any) => t;
+} = (t) => t;
 
 export { _, withFoo, ident };
