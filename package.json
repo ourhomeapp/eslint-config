@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "28.5.0",
+  "version": "29.0.0",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
@@ -21,36 +21,36 @@
     "test": "ava"
   },
   "dependencies": {
-    "@babel/eslint-parser": "7.15.8",
-    "@typescript-eslint/eslint-plugin": "4.33.0",
-    "@typescript-eslint/parser": "4.33.0",
+    "@babel/eslint-parser": "7.16.0",
+    "@typescript-eslint/eslint-plugin": "5.3.0",
+    "@typescript-eslint/parser": "5.3.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.24.2",
-    "eslint-plugin-jest": "25.0.1",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-jest": "25.2.2",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.26.1",
     "eslint-plugin-react-hooks": "4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.15.8",
-    "@babel/preset-env": "7.15.8",
-    "@babel/preset-react": "7.14.5",
-    "@types/eslint": "7.28.1",
-    "@types/node": "16.10.3",
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.0",
+    "@babel/preset-react": "7.16.0",
+    "@types/eslint": "7.28.2",
+    "@types/node": "16.11.6",
     "ava": "3.15.0",
     "common-tags": "1.8.0",
     "eslint": "7.32.0",
     "prettier": "2.4.1",
     "react": "17.0.2",
-    "typescript": "4.4.3"
+    "typescript": "4.4.4"
   },
   "peerDependencies": {
-    "@babel/core": ">=7.15.x",
-    "@babel/preset-env": ">=7.15.x",
-    "@babel/preset-react": ">=7.14.x",
+    "@babel/core": ">=7.16.x",
+    "@babel/preset-env": ">=7.16.x",
+    "@babel/preset-react": ">=7.16.x",
     "eslint": ">=7.32.x",
     "prettier": ">=2.4.x",
     "typescript": ">=4.4.x"
