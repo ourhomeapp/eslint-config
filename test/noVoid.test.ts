@@ -1,12 +1,10 @@
-import test from 'ava';
-
 import { executeOnFiles, getRuleResults } from './util';
 
-test('Error on void in non-statements', async (t) => {
+test('Error on void in non-statements', async () => {
   const [output] = await executeOnFiles(['./test/samples/noVoid.ts']);
   const errors = getRuleResults(output, 'no-void');
 
-  t.is(errors.length, 2);
-  t.is(errors.length, output.errorCount);
-  t.is(output.warningCount, 0);
+  expect(errors).toHaveLength(2);
+  expect(errors).toHaveLength(output.errorCount);
+  expect(output.warningCount).toBe(0);
 });

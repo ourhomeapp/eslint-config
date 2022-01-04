@@ -1,12 +1,10 @@
-import test from 'ava';
-
 import { executeOnFiles, getRuleResults } from './util';
 
-test('Warn on curly brace violations', async (t) => {
+test('Warn on curly brace violations', async () => {
   const [output] = await executeOnFiles(['./test/samples/curly.js']);
   const warnings = getRuleResults(output, 'curly', [1]);
 
-  t.is(warnings.length, 5);
-  t.is(warnings.length, output.warningCount);
-  t.is(output.errorCount, 0);
+  expect(warnings).toHaveLength(5);
+  expect(warnings).toHaveLength(output.warningCount);
+  expect(output.errorCount).toBe(0);
 });

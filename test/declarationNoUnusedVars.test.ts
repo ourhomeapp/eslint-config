@@ -1,11 +1,9 @@
-import test from 'ava';
-
 import { executeOnFiles } from './util';
 
-test('No false positives on declaration files', async (t) => {
+test('No false positives on declaration files', async () => {
   const [output] = await executeOnFiles([
     './test/samples/declarationNoUnusedVars.d.ts',
   ]);
 
-  t.is(output.messages.length, 0);
+  expect(output.messages).toHaveLength(0);
 });

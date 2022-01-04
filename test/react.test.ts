@@ -1,8 +1,6 @@
-import test from 'ava';
-
 import { executeOnFiles, getRuleResults } from './util';
 
-test('Error if jsx in unsupported file type', async (t) => {
+test('Error if jsx in unsupported file type', async () => {
   const [output] = await executeOnFiles([
     './test/samples/reactJsxFilenameExtension.js',
   ]);
@@ -11,12 +9,12 @@ test('Error if jsx in unsupported file type', async (t) => {
     /^react\/(display-name|jsx-filename-extension)$/,
   );
 
-  t.is(errors.length, 2);
-  t.is(errors.length, output.errorCount);
-  t.is(output.warningCount, 0);
+  expect(errors).toHaveLength(2);
+  expect(errors).toHaveLength(output.errorCount);
+  expect(output.warningCount).toBe(0);
 });
 
-test('Error if components not arrow functions', async (t) => {
+test('Error if components not arrow functions', async () => {
   const [output] = await executeOnFiles([
     './test/samples/reactFunctionComponentDefinition.tsx',
   ]);
@@ -25,7 +23,7 @@ test('Error if components not arrow functions', async (t) => {
     /^react\/(function-component-definition)$/,
   );
 
-  t.is(errors.length, 2);
-  t.is(errors.length, output.errorCount);
-  t.is(output.warningCount, 0);
+  expect(errors).toHaveLength(2);
+  expect(errors).toHaveLength(output.errorCount);
+  expect(output.warningCount).toBe(0);
 });
