@@ -15,3 +15,17 @@ test('Error if jsx in unsupported file type', async (t) => {
   t.is(errors.length, output.errorCount);
   t.is(output.warningCount, 0);
 });
+
+test('Error if components not arrow functions', async (t) => {
+  const [output] = await executeOnFiles([
+    './test/samples/reactFunctionComponentDefinition.tsx',
+  ]);
+  const errors = getRuleResults(
+    output,
+    /^react\/(function-component-definition)$/,
+  );
+
+  t.is(errors.length, 2);
+  t.is(errors.length, output.errorCount);
+  t.is(output.warningCount, 0);
+});
