@@ -1,6 +1,7 @@
 const airBnbBaseRules = require('eslint-config-airbnb-base/rules/style');
 
-const airBnbNoRestrictedSyntax = airBnbBaseRules.rules['no-restricted-syntax'];
+const [airBnbNoRestrictedSyntaxLevel, ...airBnbNoRestrictedSyntaxOptions] =
+  airBnbBaseRules.rules['no-restricted-syntax'];
 
 module.exports = {
   env: { node: true, browser: false },
@@ -21,8 +22,8 @@ module.exports = {
     ],
     'no-void': ['error', { allowAsStatement: true }],
     'no-restricted-syntax': [
-      airBnbNoRestrictedSyntax[0],
-      airBnbNoRestrictedSyntax[1].filter(
+      airBnbNoRestrictedSyntaxLevel,
+      ...airBnbNoRestrictedSyntaxOptions.filter(
         ({ selector } = {}) => !/forofstatement/i.test(selector ?? ''),
       ),
     ],
