@@ -5,6 +5,7 @@ module.exports = {
   ],
   rules: {
     'import/extensions': 'off',
+    'import/no-deprecated': ['warn'],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'import/order': [
       'warn',

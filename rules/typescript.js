@@ -6,10 +6,6 @@ const baseNoUseBeforeDefineOptions = baseRules['no-use-before-define'][1];
 module.exports = {
   overrides: [
     {
-      files: ['*.{js,jsx}'],
-      parser: '@babel/eslint-parser',
-    },
-    {
       files: ['*.{ts,tsx}'],
       parser: '@typescript-eslint/parser',
       extends: [
@@ -47,6 +43,12 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/unbound-method': 'off',
+        '@typescript-eslint/no-unsafe-access': 'off',
+        '@typescript-eslint/no-unsafe-argument': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-unsafe-return': 'off',
       },
     },
   ],

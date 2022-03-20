@@ -30,6 +30,10 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['*.{js,jsx}'],
+      parser: '@babel/eslint-parser',
+    },
+    {
       files: ['src/**/*'],
       env: { node: false, browser: true },
       rules: {
