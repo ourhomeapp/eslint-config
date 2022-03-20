@@ -27,3 +27,13 @@ test('Error if components not arrow functions', async () => {
   expect(errors).toHaveLength(output.errorCount);
   expect(output.warningCount).toBe(0);
 });
+
+test('Should not error on props spread', async () => {
+  const [output] = await executeOnFiles([
+    './test/samples/reactPropsSpread.tsx',
+  ]);
+  const errors = getRuleResults(output, /^react\/jsx-props-no-spreading$/);
+
+  expect(errors).toHaveLength(0);
+  expect(output.warningCount).toBe(0);
+});
