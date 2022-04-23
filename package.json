@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "33.2.0",
+  "version": "33.3.0",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
@@ -26,7 +26,7 @@
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-jest": "26.1.4",
+    "eslint-plugin-jest": "26.1.5",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.29.4",
@@ -43,7 +43,7 @@
     "@types/react-dom": "18.0.2",
     "common-tags": "1.8.2",
     "enhanced-resolve": "5.9.3",
-    "eslint": "8.13.0",
+    "eslint": "8.14.0",
     "jest": "27.5.1",
     "prettier": "2.6.2",
     "react": "18.0.0",
@@ -55,7 +55,7 @@
     "@babel/core": ">=7.17.x",
     "@babel/preset-env": ">=7.16.x",
     "@babel/preset-react": ">=7.16.x",
-    "eslint": ">=8.13.x",
+    "eslint": ">=8.14.x",
     "prettier": ">=2.6.x",
     "typescript": ">=4.6.x"
   }
