@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "33.7.0",
+  "version": "33.8.0",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
@@ -43,12 +43,12 @@
     "@types/react-dom": "18.0.4",
     "common-tags": "1.8.2",
     "enhanced-resolve": "5.9.3",
-    "eslint": "8.15.0",
+    "eslint": "8.16.0",
     "jest": "28.1.0",
     "prettier": "2.6.2",
     "react": "18.1.0",
     "ts-jest": "28.0.2",
-    "ts-node": "10.7.0",
+    "ts-node": "10.8.0",
     "typescript": "4.6.4"
   },
   "peerDependencies": {
