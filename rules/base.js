@@ -31,7 +31,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.{js,jsx}'],
-      parser: '@babel/eslint-parser',
+      settings: { 'import/resolver': { node: { extensions: ['.js', '.ts'] } } },
     },
     {
       files: ['src/**/*'],
