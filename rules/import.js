@@ -1,4 +1,5 @@
 module.exports = {
+  settings: { 'import/resolver': { node: { extensions: ['.js', '.ts'] } } },
   extends: [
     'plugin:import/recommended',
     ...['eslint-config-airbnb-base/rules/imports'].map(require.resolve),

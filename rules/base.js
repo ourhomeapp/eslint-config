@@ -30,10 +30,6 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.{js,jsx}'],
-      settings: { 'import/resolver': { node: { extensions: ['.js', '.ts'] } } },
-    },
-    {
       files: ['src/**/*'],
       env: { node: false, browser: true },
       rules: {
