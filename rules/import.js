@@ -10,7 +10,7 @@ module.exports = {
     'import/order': [
       'warn',
       {
-        'newlines-between': 'always',
+        'alphabetize': { order: 'asc' },
         'groups': [
           'builtin',
           'external',
@@ -18,6 +18,7 @@ module.exports = {
           ['parent', 'sibling', 'index'],
           'type',
         ],
+        'newlines-between': 'always',
       },
     ],
     'import/prefer-default-export': 'off',
