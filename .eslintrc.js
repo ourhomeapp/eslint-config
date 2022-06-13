@@ -1,11 +1,9 @@
 module.exports = {
   extends: ['./index.js'],
   env: { node: true, browser: false },
+  parserOptions: { ecmaVersion: 'latest' },
+  settings: { react: { version: '18' } },
   overrides: [
-    {
-      files: ['*.{js,jsx}'],
-      parser: '@babel/eslint-parser',
-    },
     { files: ['*.{ts,tsx}'], parserOptions: { project: './tsconfig.json' } },
     {
       files: ['*.{test,spec}.*', '**/__{mocks,tests,fixtures}__/**/*'],

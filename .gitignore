@@ -1,7 +1,6 @@
 .DS_Store
 *.orig
 **/.idea/
-**/.vscode/
 **/*.sublime-*
 
 **/node_modules/*
