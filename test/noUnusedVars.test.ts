@@ -1,7 +1,8 @@
-import { executeOnFiles, getRuleResults } from './util';
+import { executeOnFile, getRuleResults } from './util';
 
 test('Error on incorrect vars ignore patterns', async () => {
-  const [output] = await executeOnFiles(['./test/samples/noUnusedVars.ts']);
+  const output = await executeOnFile('./test/samples/noUnusedVars.ts');
+
   const errors = getRuleResults(
     output,
     /(no-unused-vars|no-underscore-dangle)$/,

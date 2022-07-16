@@ -1,15 +1,11 @@
 {
+  "extends": "@tsconfig/node18-strictest/tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "lib": ["esnext"],
-    "module": "commonjs",
-    "moduleResolution": "node",
     "noEmit": true,
-    "pretty": true,
-    "skipLibCheck": true,
-    "strict": true,
     "target": "esnext"
   },
   "exclude": ["**/node_modules"]

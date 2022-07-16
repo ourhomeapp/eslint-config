@@ -13,11 +13,13 @@ module.exports = {
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
       rules: {
+        'dot-notation': 'off',
         'no-shadow': 'off',
         'no-unused-vars': 'off',
         'no-throw-literal': 'off',
         'no-use-before-define': 'off',
         '@typescript-eslint/consistent-type-imports': 'error',
+        '@typescript-eslint/dot-notation': ['error'],
         '@typescript-eslint/no-shadow': [
           'error',
           {

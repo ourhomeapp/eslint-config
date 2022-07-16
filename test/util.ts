@@ -2,11 +2,13 @@ import { ESLint } from 'eslint';
 
 import type { Linter } from 'eslint';
 
-export const executeOnText = (input: string) =>
-  getLinter().lintText([input, '\n'].join(''));
+export const executeOnFile = async (file: string) => {
+  const [result] = await getLinter().lintFiles([file]);
 
-export const executeOnFiles = (files: string | string[]) =>
-  getLinter().lintFiles(files);
+  assertResult(result);
+
+  return result;
+};
 
 export const getRuleResults = (
   { messages }: ESLint.LintResult,
@@ -28,3 +30,11 @@ const getLinter = () => {
 
   return linter;
 };
+
+export function assertResult(
+  result: unknown,
+): asserts result is ESLint.LintResult {
+  if (!Array.isArray((result as ESLint.LintResult | undefined)?.messages)) {
+    throw new Error('Not an ESLint result');
+  }
+}

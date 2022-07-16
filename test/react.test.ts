@@ -1,9 +1,9 @@
-import { executeOnFiles, getRuleResults } from './util';
+import { executeOnFile, getRuleResults } from './util';
 
 test('Error if jsx in unsupported file type', async () => {
-  const [output] = await executeOnFiles([
+  const output = await executeOnFile(
     './test/samples/reactJsxFilenameExtension.js',
-  ]);
+  );
   const errors = getRuleResults(
     output,
     /^react\/(display-name|jsx-filename-extension)$/,
@@ -15,9 +15,9 @@ test('Error if jsx in unsupported file type', async () => {
 });
 
 test('Error if components not arrow functions', async () => {
-  const [output] = await executeOnFiles([
+  const output = await executeOnFile(
     './test/samples/reactFunctionComponentDefinition.tsx',
-  ]);
+  );
   const errors = getRuleResults(
     output,
     /^react\/(function-component-definition)$/,
@@ -29,9 +29,7 @@ test('Error if components not arrow functions', async () => {
 });
 
 test('Should not error on props spread', async () => {
-  const [output] = await executeOnFiles([
-    './test/samples/reactPropsSpread.tsx',
-  ]);
+  const output = await executeOnFile('./test/samples/reactPropsSpread.tsx');
   const errors = getRuleResults(output, /^react\/jsx-props-no-spreading$/);
 
   expect(errors).toHaveLength(0);

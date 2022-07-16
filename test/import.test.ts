@@ -1,7 +1,7 @@
-import { executeOnFiles, getRuleResults } from './util';
+import { executeOnFile, getRuleResults } from './util';
 
 test('Warn on incorrect import order', async () => {
-  const [output] = await executeOnFiles(['./test/samples/import.ts']);
+  const output = await executeOnFile('./test/samples/import.ts');
   const errors = getRuleResults(output, /^import\/order$/, [2]);
   const warnings = getRuleResults(output, /^import\/order$/, [1]);
 
@@ -10,7 +10,7 @@ test('Warn on incorrect import order', async () => {
 });
 
 test('Warn on deprecated import', async () => {
-  const [output] = await executeOnFiles(['./test/samples/import.ts']);
+  const output = await executeOnFile('./test/samples/import.ts');
   const errors = getRuleResults(output, /^import\/no-deprecated$/, [2]);
   const warnings = getRuleResults(output, /^import\/no-deprecated$/, [1]);
 

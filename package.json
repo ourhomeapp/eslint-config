@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "35.3.0",
+  "version": "35.4.0",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
@@ -33,6 +33,7 @@
   "devDependencies": {
     "@swc-node/jest": "1.5.2",
     "@swc-node/register": "1.5.1",
+    "@tsconfig/node18-strictest": "1.0.0",
     "@types/eslint": "8.4.5",
     "@types/jest": "28.1.6",
     "@types/node": "18.0.5",

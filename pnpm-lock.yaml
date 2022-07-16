@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@swc-node/jest': 1.5.2
   '@swc-node/register': 1.5.1
+  '@tsconfig/node18-strictest': 1.0.0
   '@types/eslint': 8.4.5
   '@types/jest': 28.1.6
   '@types/node': 18.0.5
@@ -38,6 +39,7 @@ dependencies:
 devDependencies:
   '@swc-node/jest': 1.5.2_typescript@4.7.4
   '@swc-node/register': 1.5.1_typescript@4.7.4
+  '@tsconfig/node18-strictest': 1.0.0
   '@types/eslint': 8.4.5
   '@types/jest': 28.1.6
   '@types/node': 18.0.5
@@ -1032,6 +1034,10 @@ packages:
       '@swc/core-win32-arm64-msvc': 1.2.199
       '@swc/core-win32-ia32-msvc': 1.2.199
       '@swc/core-win32-x64-msvc': 1.2.199
+    dev: true
+
+  /@tsconfig/node18-strictest/1.0.0:
+    resolution: {integrity: sha512-bOuNKwO4Fzbt+Su5wqI9zNHwx5C25gLnutwVQA1sBZk0cW8UjVPVcwzIUhJIIJDUx7zDEbAwdCD2HfvIsV8dYg==}
     dev: true
 
   /@types/babel__core/7.1.18:
