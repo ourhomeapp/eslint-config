@@ -13,7 +13,11 @@ const withFoo = (f: Foo, cb: (f: Foo) => void): void => cb(f);
 const _ = 5;
 
 const ident: {
+  // testing syntax for type generics in overload
+  // eslint-disable-next-line @typescript-eslint/prefer-function-type
   <T>(_: T): T;
 } = (t) => t;
 
-export { _, withFoo, ident };
+const ident2: <T>(_: T) => T = (t) => t;
+
+export { _, withFoo, ident, ident2 };
