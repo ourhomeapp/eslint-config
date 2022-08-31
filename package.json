@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "37.0.0",
+  "version": "37.0.1",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
@@ -31,9 +31,9 @@
     "eslint-plugin-react-hooks": "4.6.0"
   },
   "peerDependencies": {
-    "eslint": ">=8.22.x",
+    "eslint": ">=8.23.x",
     "prettier": ">=2.7.x",
-    "typescript": ">=4.7.x"
+    "typescript": ">=4.8.x"
   },
   "devDependencies": {
     "@swc-node/jest": "1.5.2",
