@@ -1,6 +1,6 @@
 {
   "name": "@ourhomeapp/eslint-config",
-  "version": "37.0.2",
+  "version": "37.0.3",
   "description": "ESLint config for OurHome Web + React projects",
   "author": "OurHome team",
   "license": "MIT",
@@ -19,15 +19,15 @@
     "lint": "eslint . --ignore-pattern=test/samples"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.36.1",
-    "@typescript-eslint/parser": "5.36.1",
+    "@typescript-eslint/eslint-plugin": "5.36.2",
+    "@typescript-eslint/parser": "5.36.2",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.31.5",
+    "eslint-plugin-react": "7.31.7",
     "eslint-plugin-react-hooks": "4.6.0"
   },
   "peerDependencies": {
@@ -41,7 +41,7 @@
     "@tsconfig/node18-strictest": "1.0.0",
     "@types/eslint": "8.4.6",
     "@types/jest": "29.0.0",
-    "@types/node": "18.7.14",
+    "@types/node": "18.7.15",
     "@types/react-dom": "18.0.6",
     "eslint": "8.23.0",
     "eslint-plugin-jest": "27.0.1",
