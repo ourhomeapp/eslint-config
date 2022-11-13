@@ -19,6 +19,7 @@ module.exports = {
           ['parent', 'sibling', 'index'],
           'type',
         ],
+        'pathGroupsExcludedImportTypes': ['type'],
         'newlines-between': 'always',
       },
     ],
