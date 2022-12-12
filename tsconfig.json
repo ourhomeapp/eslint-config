@@ -8,5 +8,14 @@
     "noEmit": true,
     "target": "esnext"
   },
-  "exclude": ["**/node_modules"]
+  "exclude": ["**/node_modules"],
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "isolatedModules": false,
+      "lib": ["esnext"],
+      "module": "commonjs",
+      "target": "es2022"
+    }
+  }
 }
